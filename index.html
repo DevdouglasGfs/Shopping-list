@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Lista de compras</title>
+</head>
+<body>
+  <main class="container">
+    <section class="shopping-list-presentation">
+      <header>
+        <h1>Lista de compras</h1>
+      </header>
+      <div class="shopping-list__products-to-buy">
+        <form class="shopping-list__form">
+          <fieldset>
+            <input placeholder="Nome do produto" type="text" name="product-name" id="product-name">
+            <input placeholder="Valor" type="number" name="product-price" id="product-price">
+            <input placeholder="Quantidade" type="number" name="product-amount" id="product-amount">
+          </fieldset>
+          <input id="add-product-cta" type="button" value="Incluir">
+        </form>
+        <ul class="shopping-list__list">
+          <li>Nenhum produto foi adicionado ainda</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
