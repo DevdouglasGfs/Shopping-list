@@ -15,12 +15,13 @@
       <div class="shopping-list__products-to-buy">
         <form class="shopping-list__form">
           <fieldset>
-            <input placeholder="Nome do produto" type="text" name="product-name" id="product-name">
-            <input placeholder="Valor" type="number" name="product-price" id="product-price">
-            <input placeholder="Quantidade" type="number" name="product-amount" id="product-amount">
+            <input placeholder="Nome do produto" type="text" name="product-name" id="product-name" required="required">
+            <input placeholder="Valor" name="product-price" id="product-price" required="required">
+            <input min="1" placeholder="Quantidade" type="number" name="product-amount" id="product-amount" required="required">
           </fieldset>
           <input id="add-product-cta" type="button" value="Incluir">
         </form>
+        <p class="shopping-list__total-price"><strong>Preço total: </strong><span class="total-price">0</span></p>
         <ul class="shopping-list__list">
           <li>Nenhum produto foi adicionado ainda</li>
         </ul>
