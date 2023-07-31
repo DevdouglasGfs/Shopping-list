@@ -153,28 +153,26 @@ function UpdateElementValues(product, productData) {
           newData.id = ID;
           
           if (NAME !== product.name) {
-            product.name = NAME;
             PRODUCT_NAME.textContent = NAME;
             newData.name = NAME;
           }
-          console.log(product.name)
+          console.log(`Nome do produto: ${product.name}`)
           if (PRICE !== product.price) {
-            product.price = PRICE;
-            PRODUCT_PRICE.textContent = PRICE;
+            PRODUCT_PRICE.textContent.split(" ")[1] = PRICE;
             newData.price = PRICE;
           }
-          console.log(product.price)
+          console.log(`Preço do produto: ${product.price}`)
           if (AMOUNT !== product.amount) {
-            product.amount = AMOUNT;
-            PRODUCT_AMOUNT.textContent = AMOUNT;
+            PRODUCT_AMOUNT.textContent.split(" ")[1] = AMOUNT;
             newData.amount = AMOUNT;
           }
-          console.log(product.amount)
+          console.log(`Quantidade do produto: ${product.amount}`)
           // Atualizando o objeto do produto original com os novos dados
           Object.assign(product, newData);
         }
         console.log("step 2")
-        console.log(product, productData)
+        console.log(product, productData);
+        return;
       }
     }
   }
